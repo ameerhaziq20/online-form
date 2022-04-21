@@ -30,10 +30,6 @@ getValueEM(val:string){
   this.email=val;
 }
 
-clearValueALL(){
-
-}
-
 }
 
 
