@@ -1,24 +1,36 @@
-<h2>
-    First Name 
-</h2>
+<!--------for name textboxes-------->
+<div>
+    <h2>
+        Full Name *
+    </h2>
 
-<input #first type="text">
+        <div>
+            <input #first type="text" placeholder="First name">
+            <input #last type="text" placeholder="Last name">
+        </div>
+</div>
 
-<h2>
-    Last Name
-</h2>
-<input #last type="text">
 
-<h2>
-    Email
-</h2>
-<input #email type="text">
+<!---For email textbox-->
+<div>
 
-<button (click)="getValueFN(first.value);getValueLN(last.value);getValueEM(email.value)" >
-    Submit
-</button>
+    <h2>
+        Email
+    </h2>
+    <input #email type="text">
 
-<button (click) = "first.value = ''; last.value=''; email.value=''">Clear Form</button>
+</div>
+
+<!---Buttons-->
+<div>
+    <button (click)="getValueFN(first.value);getValueLN(last.value);getValueEM(email.value)" >
+        Submit
+    </button>
+    
+    <button (click) = "first.value = ''; last.value=''; email.value=''">Clear Form</button>
+</div>
+
+
 
 
 
