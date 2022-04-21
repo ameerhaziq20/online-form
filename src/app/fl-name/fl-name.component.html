@@ -1,0 +1,25 @@
+<h2>
+    First Name 
+</h2>
+
+<input #first type="text">
+
+<h2>
+    Last Name
+</h2>
+<input #last type="text">
+
+<h2>
+    Email
+</h2>
+<input #email type="text">
+
+<button (click)="getValueFN(first.value);getValueLN(last.value);getValueEM(email.value)" >
+    Submit
+</button>
+
+<button (click) = "first.value = ''; last.value=''; email.value=''">Clear Form</button>
+
+
+
+  
